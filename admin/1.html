@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Barangay Record System </title>
+    <style>
+     h2 {
+        margin-top: 20px;
+        color: #333;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }   
+    </style>
+</head>
+<body>
+    
+Benedick
+Benedick
+<form id="privacy-form">
+
+            <h2>Data Privacy Policy</h2>
+            <p>
+                Barangay ("we," "us," or "our") is committed to protecting your privacy. This Data Privacy Policy explains how we collect, use, disclose, and safeguard your information when you access our form.
+            </p>
+            <p>
+                We may collect personal information such as your name, email address, and phone number. We will not sell or trade your information without your consent.
+            </p>
+            <p>
+                By providing your information, you consent to the collection and use of your personal information as described in this policy.
+            </p>
+
+            <label>
+                <input type="checkbox" id="consent" name="consent" required>
+                I have read and understood the Data Privacy Policy and consent to the collection and use of my personal information.
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('privacy-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const confirmation = confirm("Warning: Did you read all the text that has been pasted recently?");
+            if (confirmation) {
+                alert("Your data has been submitted successfully.");
+                this.reset();
+            } else {
+                alert("Submission canceled.");
+            }
+        });
+    </script>
+</body>
+</html>
