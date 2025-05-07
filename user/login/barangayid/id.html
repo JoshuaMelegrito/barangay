@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay ID Application Form</title>
+    <link rel="stylesheet" href="id.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="sk-logo.png" alt="SK Logo" class="logo-small-left">
+        <img src="barangay-logo.png" alt="Barangay Logo" class="logo-small">
+    </div>
+    <div class="container">
+        <form action="id.php" method="POST">
+            <div class="form-header">
+                <h1>BARANGAY IDENTIFICATION CARD</h1>
+                <h2>BRGY</h2>
+            </div>
+
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" required id="first_name">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" name="middle_name" id="middle_name">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" required id="last_name">
+                <label for="contact">Contact Number:</label>
+                <input type="number" name="contact" required id="contact">
+            </div>
+
+            <div class="form-section">
+                <h3>Present Address</h3>
+                <label for="house_no">House No.:</label>
+                <input type="text" name="house_no" id="house_no">
+                <label for="street">Street:</label>
+                <input type="text" name="street" id="street">
+                <label for="subdivision">Subdivision:</label>
+                <input type="text" name="subdivision" id="subdivision">
+            </div>
+
+            <div class="form-section">
+                <h3>Voter's Registration</h3>
+                <label for="vrn">Voter's Registration Number:</label>
+                <input type="text" name="vrn" id="vrn">
+                <label for="precinct_no">Precinct Number:</label>
+                <input type="text" name="precinct_no" id="precinct_no">
+            </div>
+
+            <div class="form-section">
+                <h3>Type of Residency</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="residency_type" value="Homeowner"> Homeowner</label>
+                    <label><input type="radio" name="residency_type" value="Renter"> Renter</label>
+                    <label><input type="radio" name="residency_type" value="Boarder"> Boarder</label>
+                    <label><input type="radio" name="residency_type" value="Tenant"> Tenant</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Personal Data</h3>
+                <label for="civil_status">Civil Status:</label>
+                <input type="text" name="civil_status" id="civil_status">
+                <label for="citizenship">Citizenship:</label>
+                <input type="text" name="citizenship" id="citizenship">
+                <label for="height">Height (cm):</label>
+                <input type="number" name="height" id="height">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" name="weight" id="weight">
+                <label for="eye_color">Eye Color:</label>
+                <input type="text" name="eye_color" id="eye_color">
+            </div>
+
+            <div class="form-section">
+                <h3>Family Background</h3>
+                <label for="father_name">Name of Father:</label>
+                <input type="text" name="father_name" id="father_name">
+                <label for="father_dob">Father's Date of Birth:</label>
+                <input type="date" name="father_dob" id="father_dob">
+                <label for="mother_name">Name of Mother:</label>
+                <input type="text" name="mother_name" id="mother_name">
+                <label for="mother_dob">Mother's Date of Birth:</label>
+                <input type="date" name="mother_dob" id="mother_dob">
+            </div>
+
+            <div class="certification">
+                <h3>Certification</h3>
+                <p>
+                    I certify that all of the following information/data and/or matters
+                    indicated in this Application Form and such documents attached hereto
+                    are true, and that there are no false statements, misrepresentations, or omissions herein.
+                    Any such false statements, misrepresentations, or omissions will be sufficient ground for rejection of this application,
+                    without prejudice to any other legal remedies the Barangay may be entitled to under the premises.
+                </p>
+                <label for="signature">Applicant's Signature:</label>
+                <span class="signature-text"></span>
+                <hr style="width: 60%; display: inline-block; margin: 0;">
+            </div>
+
+            <div class="form-section">
+                <h3>ID Photo</h3>
+                <div class="id-photo">2x2 Photo</div>
+                <input type="file" name="photo" accept="image/*" id="photo">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
