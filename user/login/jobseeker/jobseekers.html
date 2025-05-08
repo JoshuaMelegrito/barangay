@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-time Job Seeker Registration</title>
+    <link rel="stylesheet" href="jobseeker.css">
+</head>
+<body>
+    <body>
+        <div class="logo-container">
+            <img src="sk-logo.png" alt="logo.html" class="logo-small-left">
+            <img src="barangay-logo.png" alt="brgy.html" class="logo-small">
+        </div>
+
+    <!-- Full-screen form -->
+    <form action="jobseeker.php" method="POST">
+        <h1>Barangay First-time Job Seeker Registration</h1>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name" required>
+        </div>
+
+        <!-- First Name -->
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter First Name" required>
+        </div>
+
+        <!-- Middle Name -->
+        <div class="form-group">
+            <label for="middle-name">Middle Name</label>
+            <input type="text" id="middle_name" name="middle_name" placeholder="Enter Middle Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Number eg: 9604404546 " required>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Barangay Address</label>
+            <textarea id="address" name="address" placeholder="Enter Your Barangay Address" rows="4" required></textarea>
+        </div>
+
+        <!-- Birthdate -->
+        <div class="form-group">
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+        <!-- Job Preference -->
+        <div class="form-group">
+            <label for="job-preference">Job Preference</label>
+            <input type="text" id="job_preference" name="job_preference" placeholder="Enter Job Preference (e.g., cashier, laborer)" required>
+        </div>
+
+        <!-- Resume Upload -->
+        <div class="form-group">
+            <label for="resume">Upload Birth Certificate</label>
+            <input type="file" id="birthcertificate" name="birthcertificate" accept=".pdf, .doc, .docx" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+</body>
+</html>
