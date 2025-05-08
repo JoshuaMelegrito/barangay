@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay </title>
+    <link rel="stylesheet" href="indigency.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>BARANGAY INDIGENCY</h1>
+    <img src="barangay-logo.png" alt="Right Logo" class="logo-small">
+    <img src="sk-logo.png" alt="Left Logo" class="logo-small-left">
+
+    <form action="indigency.php" method="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename"  required>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname"  required>
+       
+        <label for="contact">Contact Number:</label>
+        <input type="number" id="contact" name="contact"  required>
+
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"  required>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address"  required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="gender">Select your Option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+
+        <label for="reason">Reason of Taking Barangay Indigency:</label>
+        <input type="text" id="reason" name="reason"  required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
